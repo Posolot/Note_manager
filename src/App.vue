@@ -1,8 +1,6 @@
 <template>
   <div id="app" class="container mt-4">
     <h1 class="mb-4 text-center">Note Manager</h1>
-
-    <!-- Форма для создания заметок -->
     <div class="card p-3 mb-4 shadow-sm">
       <h3>Create a Note</h3>
       <div class="mb-3">
@@ -34,8 +32,7 @@
       </div>
       <button class="btn btn-primary w-100" @click="addNote">Add Note</button>
     </div>
-
-    <!-- Список заметок с фильтрацией -->
+    
     <div class="mb-3">
       <label for="filter" class="form-label">Filter by Category</label>
       <select id="filter" v-model="filter" class="form-select">
@@ -109,13 +106,11 @@ export default {
 </script>
 
 <style scoped>
-/* Общие стили */
 body {
   background-color: #f8f9fa;
   font-family: 'Arial', sans-serif;
 }
 
-/* Карточка заметок */
 .note-card {
   border-left: 5px solid #0d6efd;
   transition: transform 0.2s ease-in-out;
@@ -124,18 +119,15 @@ body {
 .note-card:hover {
   transform: scale(1.02);
 }
-
-/* Кнопка добавления */
+  
 button {
   font-size: 1rem;
 }
 
-/* Пустой список */
 .text-muted {
   font-size: 1.2rem;
 }
 
-/* Заголовок */
 h1 {
   font-size: 2.5rem;
   color: #333;
